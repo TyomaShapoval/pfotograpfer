@@ -8,10 +8,11 @@
     <title>Fotography</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&family=Tangerine&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&family=Caveat:wght@400;700&family=Comfortaa:wght@400;700&family=Tangerine&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./img/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -22,26 +23,46 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header_bar">
+            <div class="header__bar">
                 <div class="logo">
-                    <img src="./img/logo.png" alt="logo">
-                    <p class="logo_text">Natalka Gergel</p>
+                    <p class="logo__text">Natalka Gergel</p>
                 </div>
                 <nav class="naviganion">
-                    <ul class="navigation_unordered">
-                        <li class="navigation_list list"><a href=""></a>Головна</li>
-                        <li class="navigation_list list"><a href=""></a>Галерея</li>
-                        <li class="navigation_list list"><a href=""></a>Прайс</li>
-                        <li class="navigation_list list"><a href=""></a>Контакти</li>
+                    <ul class="navigation__unordered">
+                        <li class="navigation__list list"><a class="navigation__link" href=""></a>Головна</li>
+                        <li class="navigation__list list"><a class="navigation__link" href=""></a>Галерея</li>
+                        <li class="navigation__list list"><a class="navigation__link" href=""></a>Прайс</li>
+                        <li class="navigation__list list"><a class="navigation__link" href=""></a>Контакти</li>
                     </ul>
                 </nav>
+                <div class="burger">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                </div>
             </div>
         </div>
     </header>
     <section class="hero">
-        <h1>
-            Відкрийте для себе прекрасні моменти
-        </h1>
+        <div class="container">
+            <div class="hero__title">
+                <h1 class="hero__text">
+                    Відкрийте для себе прекрасні моменти
+                </h1>
+            </div>
+            <div class="hero__p">
+                <p class="hero__p-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ad corporis
+                    fugit odio blanditiis sunt eligendi,
+                    fugiat accusantium a quae recusandae in ullam beatae voluptas, neque veniam quod reprehenderit
+                    adipisci.</p>
+
+                <div class="hero__button">
+                    <button type="button" class="button-select">
+                        Замовити
+                    </button>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 
