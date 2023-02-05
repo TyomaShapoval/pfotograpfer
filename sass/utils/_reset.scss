@@ -1,0 +1,37 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    padding: 0px 15px;
+    margin: 0 auto;
+    @include tell {
+        width: 480px;
+    }
+    @include tab {
+        width: 768px;
+    }
+    @include comp {
+        width: 1200px;
+    }
+}
