@@ -1,24 +1,15 @@
-body {
-    font-family: roboto, sans-serif;
-    background-color: #ffffff;
-    background-image: url(./../img/hero-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-}
-.header {
-    margin-top: 26px;
-    margin-bottom: 30px;
-    @include comp {
-        margin-bottom: 50px;
-    }
-}
 .logo__text {
+    position: relative;
+    z-index: 2;
     font-family: 'Tangerine', cursive;
-    font-size: 20px;
-    line-height: calc(91 / 48);
+    font-size: 25px;
+    width: 120px;
+    line-height: calc(91 / 99);
+    text-align: center;
     color: #CC9F5B;
     @include comp {
         font-size: 48px;
+        width: 200px;
     }
 }
 .header__bar {
@@ -45,13 +36,15 @@ body {
     }
 }
 .navigation__list {
-    font-family: 'Caveat', cursive;
+    font-family: 'Lora', serif;
     font-weight: 400;
         font-size: 30px;
         line-height: calc(38 / 30);
         color: #ffffff;
 }
 .burger {
+    position: relative;
+    z-index: 2;
     width: 30px;
     height: 20px;
     display: flex;
@@ -66,58 +59,50 @@ height: 2px;
 background-color: #ffffff;
 }
 .hero__title {
-    width: 230px;
-    height: 120px;
+    top: 20%;
+    position: absolute;
+    width: 300px;
     @include comp {
         width: 745px;
-        height: 277px;
     }
 }
 .hero__text {
-    font-family: 'Advent Pro';
-    font-size: 30px;
+    font-family: 'Lora', serif;
+    font-size: 48px;
         line-height: calc(76 / 72);
         letter-spacing: 0.12em;
-        color: #FFD089;
+        color: #CC9F5B;
         @include comp {
             font-size: 90px;
         }
 }   
 .hero__p {
-    margin-top: 20px;
-    width: 230px;
+    width: 300px;
     text-align: center;
     @include comp {
         width: 745px;
-        margin-top: 34px;
     }
 }
-.hero__p-text {
-    color: #ffffff;
-    text-align: start;
-    font-weight: 400;
-        font-size: 14px;
-        line-height: calc(42 / 36);
-        @include comp {
-            font-size: 28px;
-        }
-}
+
 .hero__button {
-    margin-top: 30px;
+    position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
     @include comp {
-        margin-top: 80px;
+        
     }
 }
 .button-select {
-    width: 90px;
-    height: 32px;
+    width: 150px;
+    height: 45px;
     border-radius: 5px;
     cursor: pointer;
     outline: none;
     border: none;
     background-color: #CC9F5B;
     font-weight: 400;
-        font-size: 12px;
+        font-size: 16px;
         line-height: calc(50 / 36);
         color: #ffffff;
         transition: all 200ms;
