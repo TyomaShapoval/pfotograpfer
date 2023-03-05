@@ -42,9 +42,16 @@
         line-height: calc(38 / 30);
         color: #ffffff;
 }
-.burger {
+.header__button {
     position: relative;
-    z-index: 2;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    
+}
+.burger {
+    
     width: 30px;
     height: 20px;
     display: flex;

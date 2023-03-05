@@ -22,7 +22,7 @@
 
 <body>
     <div class="backimg">
-        <header class="header">
+        <header class="header" id="main-head">
             <div class="container">
                 <div class="header__bar">
                     <div class="logo">
@@ -36,11 +36,13 @@
                             <li class="navigation__list list"><a class="navigation__link" href=""></a>Контакти</li>
                         </ul>
                     </nav>
-                    <div class="burger">
-                        <div class="burger__line"></div>
-                        <div class="burger__line"></div>
-                        <div class="burger__line"></div>
-                    </div>
+                    <button type="menu" class="header__button" data-modal-open>
+                        <div class="burger">
+                            <div class="burger__line"></div>
+                            <div class="burger__line"></div>
+                            <div class="burger__line"></div>
+                        </div>
+                    </button>
                 </div>
             </div>
         </header>
@@ -61,31 +63,14 @@
             </div>
         </section>
     </div>
-    <div class="mobile-menu">
-        <button type="button" class="mobile-menu__close" data-menu-close><svg width="40px" height="40px">
-                <use href="./image/symbol-defs12.svg#icon-closemob"></use>
-            </svg></button>
-        <div>
-            <ul>
-                <li class="list mobile-menu__list"><a href="./index.html" class="link mobile-menu__nav">Студія</a></li>
-                <li class="list mobile-menu__list"><a href="./portfolio.html" class="link mobile-menu__nav">Портфоліо</a></li>
-                <li class="list mobile-menu__list"><a href="#" class="link mobile-menu__nav">Контакти</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="mobile-menu__unordered">
-                <li class="mobile-menu__list list"><a class="mobile-menu__tel link" href="tel:+380961111111">+380961111111</a>
-                </li>
-                <li class="mobile-menu__list list"><a class="mobile-menu__mail link"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            </ul>
-            <ul class="soc-list">
-                <li class="soc-list__li list"><a class="soc-list__link link" href="">Instagram</a></li>
-                <li class="soc-list__li list"><a class="soc-list__link link" href="">Twitter</a></li>
-                <li class="soc-list__li list"><a class="soc-list__link link" href="">Facebook</a></li>
-                <li class="soc-list__li list"><a class="soc-list__link link" href="">LinkedIn</a></li>
-            </ul>
-        </div>
+    <div class="mobile-menu is-hidden" data-modal >
+      <ul class="mobile-menu__nav">
+        <li class="list mobile-menu__list" data-modal-close>Головна</li>
+        <li class="list mobile-menu__list" data-modal-close1>Галерея</li>
+        <li class="list mobile-menu__list" data-modal-close2>Прайс</li>
+        <li class="list mobile-menu__list" data-modal-close3>Контакти</li>
+      </ul>  
     </div>
 </body>
+<script src="./js/mobile.js"></script>
 </html>
